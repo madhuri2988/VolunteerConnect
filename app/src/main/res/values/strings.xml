@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">VolunteerConnect</string>
+    \
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_activity_volunteer_home_page">VolunteerHomePage</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="location">
+        <item>San Jose, CA</item>
+        <item>Santa Clara, CA</item>
+        <item>Mountain View, CA</item>
+        <item>Milpitas, CA </item>
+    </string-array>
+
+    <string-array name="eventcategory">
+        <item>Children</item>
+        <item>Disabled</item>
+        <item>Education</item>
+        <item>Environment</item>
+        <item>Homeless</item>
+        <item>Community</item>
+    </string-array>
+    <string name="title_activity_add_event">Add Event</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="events">
+    <item>blood donation</item>
+    <item>book donation</item>
+    </string-array>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>
+

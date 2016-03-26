@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="edu.scu.volunteerconnect.AddEventActivity2">
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageButton"
+    android:src="@android:drawable/ic_input_add"
+    android:layout_marginTop="44dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Photo"
+    android:id="@+id/textView8"
+    android:layout_below="@+id/imageButton"
+    android:layout_centerHorizontal="true"
+    android:textSize="20dp" />
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/editText"
+    android:layout_below="@+id/imageView3"
+    android:layout_centerHorizontal="true">
+    <EditText android:id="@+id/eventdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event details"
+        android:inputType="text|textMultiLine"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</android.support.design.widget.TextInputLayout>
+
+<Spinner
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/category"
+    android:layout_gravity="center_horizontal"
+    android:layout_below="@+id/editText"
+    android:layout_alignLeft="@+id/imageButton"
+    android:layout_alignStart="@+id/imageButton"
+    android:layout_marginTop="27dp" />
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Event Category"
+    android:id="@+id/textView9"
+
+    android:textSize="16dp"
+    android:layout_alignBottom="@+id/category"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Save Event"
+    android:id="@+id/button2"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:id="@+id/imageView3"
+    android:layout_below="@+id/textView8"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="31dp" />
+
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cancel"
+    android:id="@+id/Cancel"
+    android:layout_alignTop="@+id/button2"
+    android:layout_toRightOf="@+id/imageButton"
+    android:layout_toEndOf="@+id/imageButton" />
+
+</RelativeLayout>

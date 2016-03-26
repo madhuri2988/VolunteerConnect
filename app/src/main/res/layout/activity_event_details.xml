@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+    <FrameLayout
+        android:id="@+id/lytImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/detailImage"
+        android:layout_width="fill_parent"
+        android:layout_height="158dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/link"
+                android:src="@drawable/link_icon"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:id="@+id/tvLink"
+                android:clickable="true"
+                android:onClick="click"
+                android:textColor="#051877" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/call"
+                android:src="@drawable/call_icon"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:clickable="true"
+                android:onClick="click"
+                android:id="@+id/callText"
+                android:layout_marginRight="2dp"
+                android:textColor="#051877" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/calendar_ic"
+                android:src="@drawable/calendar_icon"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:clickable="true"
+                android:onClick="click"
+                android:id="@+id/tvCalendar"
+                android:textColor="#051877" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/detailsicon"
+                android:src="@drawable/location"
+
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Details"
+                android:id="@+id/tvLocation"
+                android:clickable="true"
+                android:onClick="click"
+                android:textColor="#051877" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/infoicon"
+                android:src="@drawable/information_icon"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Details"
+                android:id="@+id/detailstitle"
+                android:textColor="#051877" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="New Text"
+            android:id="@+id/tvDetails"
+            android:textColor="#051877"
+            android:paddingLeft="10dp" />
+
+        <!-- <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Add Event"
+             android:id="@+id/addEventBtn"
+             android:layout_gravity="center_horizontal|bottom"
+             android:layout_margin="3dp"
+             android:background="#96df30"
+             android:padding="3dp" />-->
+
+    </LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinatedLayout">
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+    <!--
+        <RelativeLayout
+            android:id="@+id/addbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intrested!!"
+                android:id="@+id/addEventtxt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp" />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add!"
+                android:id="@+id/addEventbtn"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="10dp"
+                android:background="#53a318"
+                android:textColor="#ffffff"
+                android:paddingRight="10dp" />
+
+    </RelativeLayout>-->
+
+</LinearLayout>
